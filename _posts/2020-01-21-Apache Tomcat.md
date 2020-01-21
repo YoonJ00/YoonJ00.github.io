@@ -9,3 +9,7 @@ Tomcat
 Apache Tomcat
 : ![아파치 톰캣](https://user-images.githubusercontent.com/59801728/72780772-0dd96000-3c63-11ea-971c-c850e17f5dab.png)
 <br>톰캣이 아파치의 기능 일부를 가져와서 제공해주는 형태이다.
+
+
+Tomcat 동작과정
+: ![Tomcat](https://user-images.githubusercontent.com/59801728/72781975-f64fa680-3c65-11ea-9cbd-39f2817d92ba.png)

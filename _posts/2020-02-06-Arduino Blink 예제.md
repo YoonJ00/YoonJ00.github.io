@@ -21,11 +21,17 @@ LED 회로 구성하기
 : ![LED 회로 구성](https://user-images.githubusercontent.com/59801728/73822217-f391ab80-4838-11ea-9768-4f62f4eaf54f.PNG)<br>
 
 
+LED Blink 프로그램 소스
+: ![LED Blink 예제](https://user-images.githubusercontent.com/59801728/73823481-b2e76180-483b-11ea-8f1b-f97a4f1ece37.PNG)<br>
+pinMode() 함수는 프로그램 처음에 한 번만 설정해 주면되기 때문에 setup()함수에 코딩한다.<br>
+loop() 함수에는 8번 핀에 전원을 내보내고(HIGH) 1초 기다린 후 전원을 내보내지 않고(LOW) 1초 기다리는 동작을 반복하면 된다.
+
+
 아두이노 함수 알아보기
 : 아두이노에서 LED를 컨트롤하기 위해서 <b>pinMode(), digitalWrite(), delay()</b>함수가 사용된다.
 
 pinMode()
-: 디지털 핀의 모드를 OUTPUT(출력) 또는 INPUT(입력)으로 설정하는 함수이다.<br><br><br>
+: 디지털 핀의 모드를 OUTPUT(출력) 또는 INPUT(입력)으로 설정하는 함수이다.<br><br>
 <b>-구조</b><br>
 pinMode(핀 번호, 모드)<br>
 여기서 핀 번호와 모드를 매개변수 또는 인자라고 한다.<br><br>
@@ -38,7 +44,7 @@ pinMode(13, INPUT); //13번 핀을 입력 모드로 설정
 
 
 digitalWrite()
-: 디지털 핀의 전압을 HIGH 또는 LOW로 설정하는 함수이다.<br><br><br>
+: 디지털 핀의 전압을 HIGH 또는 LOW로 설정하는 함수이다.<br><br>
 <b>-구조</b><br>
 digitalWrite(핀 번호, 전압)<br>
 여기서 핀 번호와 전압을 매개변수 또는 인자라고 한다.<br><br>
@@ -51,7 +57,7 @@ digitalWrite(13, LOW); //13번 핀의 전압을 LOW로 설전한다.
 
 
 delay()
-: 프로그램 실행을 일정 멈추는 함수<br><br><br>
+: 프로그램 실행을 일정 멈추는 함수<br><br>
 <b>-구조</b><br>
 delay(멈출 시간)<br>
 여기서 멈출 시간을 매개변수 또는 인자라고 한다.<br><br>

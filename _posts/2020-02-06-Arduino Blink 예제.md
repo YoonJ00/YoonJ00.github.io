@@ -65,3 +65,10 @@ delay(멈출 시간)<br>
 멈출 시간 : 단위는 밀리초(msec) 1msec = 0.001초 / 1초 = 1000msec<br><br>
 <b>-사용 예</b><br>
 delay(1000); //프로그램 실행을 1초 멈춘다.
+
+결과 화면
+: ![LOW](https://user-images.githubusercontent.com/59801728/73824429-7ddc0e80-483d-11ea-9a6d-4ac75095aad3.jpg)<br>
+LOW일 때 화면<br>
+![HIGH](https://user-images.githubusercontent.com/59801728/73824502-9cdaa080-483d-11ea-8db0-1dee159fbe3c.jpg)
+HIGH일 때 화면
+

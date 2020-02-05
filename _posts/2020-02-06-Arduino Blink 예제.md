@@ -22,4 +22,40 @@ LED 회로 구성하기
 
 
 아두이노 함수 알아보기
-: 아두이노에서 LED를 컨트롤하기 위해서 <b>pinMode(), digitalWrite(), delay() 함수가 사용된다.
+: 아두이노에서 LED를 컨트롤하기 위해서 <b>pinMode(), digitalWrite(), delay()</b>함수가 사용된다.
+
+pinMode()
+: 디지털 핀의 모드를 OUTPUT(출력) 또는 INPUT(입력)으로 설정하는 함수이다.<br><br><br>
+<b>-구조</b><br>
+pinMode(핀 번호, 모드)<br>
+여기서 핀 번호와 모드를 매개변수 또는 인자라고 한다.<br><br>
+<b>-매개변수 (인자)</b><br>
+핀번호 : 모드를 설정하고자 하는 핀 번호 / 센서가 연결된 핀 번호<br>
+모드 : 출력인 경우 OUTPUT, 입력인 경우 INPUT을 입력<br><br>
+<b>-사용 예</b><br>
+pinMode(13, OUTPUT); //13번 핀을 출력 모드로 설정<br>
+pinMode(13, INPUT); //13번 핀을 입력 모드로 설정
+
+
+digitalWrite()
+: 디지털 핀의 전압을 HIGH 또는 LOW로 설정하는 함수이다.<br><br><br>
+<b>-구조</b><br>
+digitalWrite(핀 번호, 전압)<br>
+여기서 핀 번호와 전압을 매개변수 또는 인자라고 한다.<br><br>
+<b>-매개변수 (인자)</b><br>
+핀번호 : 모드를 설정하고자 하는 핀 번호 / 센서가 연결된 핀 번호<br>
+전압 : HIGH 또는 LOW<br><br>
+<b>-사용 예</b><br>
+digitalWrite(13, HIGH); //13번 핀의 전압을 HIGH로 설정한다.<br>
+digitalWrite(13, LOW); //13번 핀의 전압을 LOW로 설전한다.
+
+
+delay()
+: 프로그램 실행을 일정 멈추는 함수<br><br><br>
+<b>-구조</b><br>
+delay(멈출 시간)<br>
+여기서 멈출 시간을 매개변수 또는 인자라고 한다.<br><br>
+<b>-매개변수 (인자)</b><br>
+멈출 시간 : 단위는 밀리초(msec) 1msec = 0.001초 / 1초 = 1000msec<br><br>
+<b>-사용 예</b><br>
+delay(1000); //프로그램 실행을 1초 멈춘다.

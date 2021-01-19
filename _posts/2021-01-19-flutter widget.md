@@ -20,8 +20,7 @@ void main() {
     );
 }
 ```
-<b>MaterialApp > Scaffold > Center > Text</b>
-
+<b>MaterialApp > Scaffold > Center > Text</b><br>
 레이아웃을 구성하는 MaterialApp, Scaffold 위젯, material 다지인의 구성을 잡아준다.
 <br><br>
 

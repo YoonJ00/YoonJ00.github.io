@@ -39,4 +39,60 @@ before 버튼을 클릭하면 after로 바뀌게 하는 active.<br><br>
 :1. 기본 위젯 -> Container(기본 위젯, 속성이 다양하다.)<br>
 Row/Column(수직/수평 방향으로 위젯들을 나란히 배치하는 위젯. children 프로퍼티 이용.)<br>
 Stack(여러 위젯을 겹치게. children 프로퍼티 이용)<br><br> 2. Stateless Widget/Stateful Widget<br>
-->상태를 가지지 않는 위젯. 변화에 무감각하다는 의미. 따라서 상태 변화를 감지하지 않기 때문에 화면을 구성할 때 최초 한 번만 build()함수를 호출한 뒤에 다시 호출하지 않는다. 이와 반대로 Stateful Widget은 어떤 위젯을 사용할지가 생각 후에 사용해야한다.
+->상태를 가지지 않는 위젯. 변화에 무감각하다는 의미. 따라서 상태 변화를 감지하지 않기 때문에 화면을 구성할 때 최초 한 번만 build()함수를 호출한 뒤에 다시 호출하지 않는다. 이와 반대로 Stateful Widget은 어떤 위젯을 사용할지가 생각 후에 사용해야한다.<br>
+![image](https://user-images.githubusercontent.com/59801728/104992493-7fa9dc80-5a64-11eb-942a-8649347d35de.png)<br>
+
+![image](https://user-images.githubusercontent.com/59801728/104992512-889aae00-5a64-11eb-8e82-95c6ecd444db.png)<br>
+
+![image](https://user-images.githubusercontent.com/59801728/104992517-8afd0800-5a64-11eb-86aa-188f93c4abb7.png)<br>
+1. Align<br>
+: 자식 위젯의 정렬 방향을 정할 수 있는 위젯.
+2. Expanded<br>
+: 자식 위젯의 크기를 최대한으로 확장시켜주는 위젯.
+
+실습문제<br>
+:
+```
+import 'package:flutter/material.dart';
+
+void main() => runApp(NewMyHomePage());
+
+class NewMyHomePage extends StatelessWidget {
+    int _counter = 0;
+
+    void _incrementCounter() {
+        _counter++;
+        print('_incrementCounter : $_counter');
+    }
+
+    Widget build(BuildContext context) {
+        print('StatelessWidget TestApp build');
+        return new MaterialApp(
+            title: 'StatelessWidget Test App',
+            home: Scaffold(
+                appBar: AppBar(
+                    title: Text('StatelessWidget Demo'),
+                ),
+                body: Center(
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                            Text('You have clicked the button this many times:',
+                            ),
+                            Text(
+                                '$_counter',
+                                style: Theme.of(context).textTheme.display1,
+                            ),
+                        ],
+                    ),
+                ),
+                floatingActionButton: FloatingActionButton(
+                    onPressed: _incrementCounter,
+                    tooltip: 'Increment',
+                    child: Icon(Icons.add),
+                ),
+            ),
+        );
+    }
+}
+

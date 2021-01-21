@@ -51,7 +51,6 @@ Stack(여러 위젯을 겹치게. children 프로퍼티 이용)<br><br> 2. State
 : 자식 위젯의 크기를 최대한으로 확장시켜주는 위젯.
 
 실습문제<br>
-:
 ```
 import 'package:flutter/material.dart';
 
